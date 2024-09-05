@@ -5,3 +5,6 @@
     box-sizing: border-box;
 }
 /* utilities */
+.fa-circle-xmark{
+    cursor: pointer;
+}

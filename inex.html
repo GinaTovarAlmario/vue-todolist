@@ -21,12 +21,14 @@
         <main class="container">
             <div class="row">
                 <div class="col mt-4">
-                    <div class="card" style="width: 18rem;" >
+                    <div class="card mb-4 w-75" >
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item" v-for="(todoItem,index) in todoList">
-                            <div :class="{'text-decoration-line-through': todoItem.isDone}">
+                            <!-- vado ad aggiungere la classe per modificare il testo -->
+                            <span :class="{'text-decoration-line-through': todoItem.isDone}" class="fs-5 me-3">
                                 {{index+1}} - {{todoItem.text}}
-                            </div>
+                            </span>
+                            <i class="fa-regular fa-circle-xmark"></i>
                           </li>
                         </ul>
                       </div>
