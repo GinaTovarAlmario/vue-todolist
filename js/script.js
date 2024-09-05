@@ -95,7 +95,11 @@ createApp({
             
             // ho un array di oggetti con due proprietà
             this.todoList.push({text:content, isDone:false});
-        }
+            this.clearTodoInput();
+        },
+        clearTodoInput(){
+            this.newTodoContent='';
+        },
     }
 
 }).mount('#app')
