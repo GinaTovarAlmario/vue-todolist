@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="app">
-        <header class="container text-center mt-2">
+        <header class="container text-center mt-2 text-info">
             <h1 class="fs-bold">La mia lista delle cose da fare</h1>
         </header>
         <main class="container">
@@ -23,7 +23,9 @@
                 <div class="col mt-4">
                     <div class="card" style="width: 18rem;">
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
+                          <li class="list-group-item" v-for="(todoItem,index) in todoList">
+                            {{index+1}} - {{todoItem.text}}
+                          </li>
                         </ul>
                       </div>
                 </div>
