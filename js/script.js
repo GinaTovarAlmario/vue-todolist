@@ -26,7 +26,60 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      message: 'Hello Vue!'
+      todoList: [
+        {
+            text:'Dare da mangiare al cane',
+            done: false,
+        },
+        {
+            text:'Preparare il pranzo',
+            done:false,
+        },
+        {
+            text:'Lavare i piatti',
+            done:false,
+        },
+        {
+            text:'Fare la spesa',
+            done:false,
+        },
+        {
+            text:'Ripassare appunti',
+            done:false,
+        },
+        {
+            text:'Fare pilates',
+            done:false,
+        },
+        {
+            text:'Fare da babysitter a Bebo',
+            done:false,
+        },
+        {
+            text:'Cercare regalo per nipotino',
+            done:false,
+        },
+        {
+            text:'Ordinare la torta per compleanno Bebo',
+            done:false,
+        },
+        {
+            text:'Ordinare farmaci per genitori',
+            done:false,
+        },
+        {
+            text:'Vai a cena fuori',
+            done:false,
+        },
+        {
+            text:'Trova il tempo per avere una vita sociale',
+            done:false,
+        },
+        {
+            text:'Sopravvivi alla giornata',
+            done:false,
+        },
+      ]
     }
-  }
+  },
 }).mount('#app')
