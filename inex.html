@@ -33,10 +33,10 @@
                         </ul>
                     </div>
                     <form class="form-floating mt-3 mb-3 w-75">
-                        <input type="text" class="form-control" id="floatingInputValue" placeholder="">
+                        <input type="text" class="form-control" id="floatingInputValue" v-model="newTodoContent">
                         <label for="floatingInputValue">Inserisci cose da fare</label>
                     </form>
-                    <button type="button" class="btn btn-primary mb-3">Aggiungi</button>
+                    <button class="btn btn-primary mb-3" @click="addNewTodoItem(newTodoContent)">Aggiungi</button>
                 </div>
             </div>
         </main>

@@ -26,6 +26,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            newTodoContent:'',
             todoList: [
                 {
                     text:'Dare da mangiare al cane',
@@ -89,8 +90,12 @@ createApp({
             this.todoList.splice(todoItemIndex,1);
             // faccio un controllo su elemento cancellato
             console.log(`l'elemento ${todoItemIndex} è stato eliminato!`);
-
         },
+        addNewTodoItem(content){
+            
+            // ho un array di oggetti con due proprietà
+            this.todoList.push({text:content, isDone:false});
+        }
     }
 
 }).mount('#app')
