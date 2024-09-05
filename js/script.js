@@ -29,55 +29,55 @@ createApp({
       todoList: [
         {
             text:'Dare da mangiare al cane',
-            done: false,
+            isDone: true,
         },
         {
             text:'Preparare il pranzo',
-            done:false,
+            isDone:false,
         },
         {
             text:'Lavare i piatti',
-            done:false,
+            isDone:false,
         },
         {
             text:'Fare la spesa',
-            done:false,
+            isDone:true,
         },
         {
             text:'Ripassare appunti',
-            done:false,
+            isDone:false,
         },
         {
             text:'Fare pilates',
-            done:false,
+            isDone:true,
         },
         {
             text:'Fare da babysitter a Bebo',
-            done:false,
+            isDone:false,
         },
         {
             text:'Cercare regalo per nipotino',
-            done:false,
+            isDone:true,
         },
         {
             text:'Ordinare la torta per compleanno Bebo',
-            done:false,
+            isDone:false,
         },
         {
             text:'Ordinare farmaci per genitori',
-            done:false,
+            isDone:false,
         },
         {
             text:'Vai a cena fuori',
-            done:false,
+            isDone:true,
         },
         {
             text:'Trova il tempo per avere una vita sociale',
-            done:false,
+            isDone:false,
         },
         {
             text:'Sopravvivi alla giornata',
-            done:false,
+            isDone:false,
         },
       ]
     }
