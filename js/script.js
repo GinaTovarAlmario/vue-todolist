@@ -92,7 +92,6 @@ createApp({
             console.log(`l'elemento ${todoItemIndex} è stato eliminato!`);
         },
         addNewTodoItem(content){
-            
             // ho un array di oggetti con due proprietà
             this.todoList.push({text:content, isDone:false});
             this.clearTodoInput();

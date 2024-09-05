@@ -32,11 +32,13 @@
                           </li>
                         </ul>
                     </div>
-                    <form class="form-floating mt-3 mb-3 w-75">
-                        <input type="text" class="form-control" id="floatingInputValue" v-model="newTodoContent" @keyup.enter="addNewTodoItem(newTodoContent)">
-                        <label for="floatingInputValue">Inserisci cose da fare</label>
-                    </form>
-                    <button class="btn btn-primary mb-3" @click="addNewTodoItem(newTodoContent)">Aggiungi</button>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control w-75" id="floatingInput" v-model="newTodoContent"
+                        @keyup.enter="addNewTodoItem(newTodoContent)">
+                        <label for="floatingInput">Inserisci cose da fare nella lista</label>
+                        <a class="btn btn-primary mt-3"
+                        @click="addNewTodoItem(newTodoContent)">Aggiungi</a>
+                    </div>
                 </div>
             </div>
         </main>
