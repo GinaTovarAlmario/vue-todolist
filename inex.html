@@ -28,7 +28,7 @@
                             <span :class="{'text-decoration-line-through': todoItem.isDone}" class="fs-5 me-3">
                                 {{index+1}} - {{todoItem.text}}
                             </span>
-                            <i class="fa-regular fa-circle-xmark"></i>
+                            <i class="fa-regular fa-circle-xmark" @click="deleteTodoItem(index)"></i>
                           </li>
                         </ul>
                       </div>

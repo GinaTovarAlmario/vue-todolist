@@ -24,62 +24,69 @@ Bonus:
 const { createApp } = Vue
 
 createApp({
-  data() {
-    return {
-      todoList: [
-        {
-            text:'Dare da mangiare al cane',
-            isDone: true,
+    data() {
+        return {
+            todoList: [
+                {
+                    text:'Dare da mangiare al cane',
+                    isDone: true,
+                },
+                {
+                    text:'Preparare il pranzo',
+                    isDone:false,
+                },
+                {
+                    text:'Lavare i piatti',
+                    isDone:false,
+                },
+                {
+                    text:'Fare la spesa',
+                    isDone:true,
+                },
+                {
+                    text:'Ripassare appunti',
+                    isDone:false,
+                },
+                {
+                    text:'Fare pilates',
+                    isDone:true,
+                },
+                {
+                    text:'Fare da babysitter a Bebo',
+                    isDone:false,
+                },
+                {
+                    text:'Cercare regalo per nipotino',
+                    isDone:true,
+                },
+                {
+                    text:'Ordinare la torta per compleanno Bebo',
+                    isDone:false,
+                },
+                {
+                    text:'Ordinare farmaci per genitori',
+                    isDone:false,
+                },
+                {
+                    text:'Vai a cena fuori',
+                    isDone:true,
+                },
+                {
+                    text:'Trova il tempo per avere una vita sociale',
+                    isDone:false,
+                },
+                {
+                    text:'Sopravvivi alla giornata',
+                    isDone:false,
+                },
+            ]
+        }
+    },
+    methods:{
+        deleteTodoItem(todoItemIndex){
+            console.log(todoItemIndex);
+
         },
-        {
-            text:'Preparare il pranzo',
-            isDone:false,
-        },
-        {
-            text:'Lavare i piatti',
-            isDone:false,
-        },
-        {
-            text:'Fare la spesa',
-            isDone:true,
-        },
-        {
-            text:'Ripassare appunti',
-            isDone:false,
-        },
-        {
-            text:'Fare pilates',
-            isDone:true,
-        },
-        {
-            text:'Fare da babysitter a Bebo',
-            isDone:false,
-        },
-        {
-            text:'Cercare regalo per nipotino',
-            isDone:true,
-        },
-        {
-            text:'Ordinare la torta per compleanno Bebo',
-            isDone:false,
-        },
-        {
-            text:'Ordinare farmaci per genitori',
-            isDone:false,
-        },
-        {
-            text:'Vai a cena fuori',
-            isDone:true,
-        },
-        {
-            text:'Trova il tempo per avere una vita sociale',
-            isDone:false,
-        },
-        {
-            text:'Sopravvivi alla giornata',
-            isDone:false,
-        },
-      ]
     }
-  },
+
 }).mount('#app')
