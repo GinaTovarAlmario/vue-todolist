@@ -101,5 +101,4 @@ createApp({
             this.newTodoContent='';
         },
     }
-
 }).mount('#app')
