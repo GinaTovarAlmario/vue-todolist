@@ -85,6 +85,10 @@ createApp({
     methods:{
         deleteTodoItem(todoItemIndex){
             console.log(todoItemIndex);
+            // devo ora fare in modo di rimuovere elemento dalla lista
+            this.todoList.splice(todoItemIndex,1);
+            // faccio un controllo su elemento cancellato
+            console.log(`l'elemento ${todoItemIndex} è stato eliminato!`);
 
         },
     }
