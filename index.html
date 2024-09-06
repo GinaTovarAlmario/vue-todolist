@@ -25,8 +25,12 @@
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item" v-for="(todoItem,index) in todoList">
                             <!-- vado ad aggiungere la classe per modificare il testo -->
-                            <span :class="{'text-decoration-line-through': todoItem.isDone}" class="fs-5 me-3">
-                                {{index+1}} - {{todoItem.text}}
+                            <span class="fs-5 me-3">
+                                {{index+1}}
+                            </span>
+                            <span  class="fs-5 me-3" :class="{'text-decoration-line-through': todoItem.done}"
+                            @click="toggleDone(index)">
+                                {{todoItem.text}}
                             </span>
                             <i class="fa-regular fa-circle-xmark" @click="deleteTodoItem(index)"></i>
                           </li>

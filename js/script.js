@@ -30,55 +30,55 @@ createApp({
             todoList: [
                 {
                     text:'Dare da mangiare al cane',
-                    isDone: true,
+                    done: true,
                 },
                 {
                     text:'Preparare il pranzo',
-                    isDone:false,
+                    done:false,
                 },
                 {
                     text:'Lavare i piatti',
-                    isDone:false,
+                    done:false,
                 },
                 {
                     text:'Fare la spesa',
-                    isDone:true,
+                    done:true,
                 },
                 {
                     text:'Ripassare appunti',
-                    isDone:false,
+                    done:false,
                 },
                 {
                     text:'Fare pilates',
-                    isDone:true,
+                    done:true,
                 },
                 {
                     text:'Fare da babysitter a Bebo',
-                    isDone:false,
+                    done:false,
                 },
                 {
                     text:'Cercare regalo per nipotino',
-                    isDone:true,
+                    done:true,
                 },
                 {
                     text:'Ordinare la torta per compleanno Bebo',
-                    isDone:false,
+                    done:false,
                 },
                 {
                     text:'Ordinare farmaci per genitori',
-                    isDone:false,
+                    done:false,
                 },
                 {
                     text:'Vai a cena fuori',
-                    isDone:true,
+                    done:true,
                 },
                 {
                     text:'Trova il tempo per avere una vita sociale',
-                    isDone:false,
+                    done:false,
                 },
                 {
                     text:'Sopravvivi alla giornata',
-                    isDone:false,
+                    done:false,
                 },
             ]
         }
@@ -93,11 +93,15 @@ createApp({
         },
         addNewTodoItem(content){
             // ho un array di oggetti con due proprietà
-            this.todoList.push({text:content, isDone:false});
+            this.todoList.push({text:content, done:false});
             this.clearTodoInput();
         },
         clearTodoInput(){
             this.newTodoContent='';
         },
+        toggleDone(todoItemIndex){
+            this.todoList[todoItemIndex].done = !this.todoList[todoItemIndex].done; 
+        },
+        
     }
 }).mount('#app')
